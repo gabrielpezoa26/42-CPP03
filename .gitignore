@@ -1,0 +1,8 @@
+.vscode/
+*.o
+
+#binaries
+ClapTrap
+ScavTrap
+FragTrap
+DiamondTrap
