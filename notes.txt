@@ -1,10 +1,12 @@
-06/11/25
+07/11/25
 
 
 ->ex00:
-	-> funçoes membro
-	->
+	-> melhorar os teste na main
+	-> revisar lógica geral
+	
+	-> organizar arquivos
 
+links:
 
--> estudar:
-	-> herança no geral
+	https://www.geeksforgeeks.org/cpp/inheritance-in-c/

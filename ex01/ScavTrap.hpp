@@ -1,32 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/07 17:28:54 by gcesar-n         ###   ########.fr       */
+/*   Created: 2025/11/07 17:34:55 by gcesar-n          #+#    #+#             */
+/*   Updated: 2025/11/07 17:34:55 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-
-int main()
-{
-	log("Testing only valid values on ClapTrap 'a'");
-	ClapTrap a("Alfred");
-	
-	a.attack("zombie");
-	a.takeDamage(0);
-	a.beRepaired(2);
-	log("\n\n\n\n");
-
-
-	log("Testing invalid values on ClapTrap 'b'");
-	ClapTrap b("Eddie");
-	b.attack("zombie");
-	b.takeDamage(-5);
-	b.beRepaired(11);
-	return 0;
-}
