@@ -1,5 +1,5 @@
-NAME = ClapTrap
-OBJECTS = objects/main.o objects/ClapTrap.o
+NAME = ScavTrap
+OBJECTS = objects/main.o objects/ClapTrap.o objects/ScavTrap.o
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ_DIR = objects
@@ -20,6 +20,9 @@ objects/main.o: main.cpp
 
 objects/ClapTrap.o: ClapTrap.cpp
 	$(CC) $(CFLAGS) -c ClapTrap.cpp -o objects/ClapTrap.o
+
+objects/ScavTrap.o: ScavTrap.cpp
+	$(CC) $(CFLAGS) -c ScavTrap.cpp -o objects/ScavTrap.o
 
 clean:
 	rm -rf $(OBJ_DIR)

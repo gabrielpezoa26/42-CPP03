@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/07 17:34:55 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/10 09:21:54 by gcesar-n         ###   ########.fr       */
+/*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
+/*   Updated: 2025/11/10 09:22:20 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAV_TRAP_HPP
-#define SCAP_TRAP_HPP
-
-# include <iostream>
 #include "ClapTrap.hpp"
 
-
-#endif
+int main()
+{
+	log("compiled!");
+	return 0;
+}

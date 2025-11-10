@@ -1,12 +1,11 @@
-07/11/25
+10/11/25
 
 
 ->ex00:
-	-> melhorar os teste na main
-	-> revisar lógica geral
-	
 	-> organizar arquivos
 
 links:
 
 	https://www.geeksforgeeks.org/cpp/inheritance-in-c/
+
+	https://cplusplus.com/doc/tutorial/inheritance/
