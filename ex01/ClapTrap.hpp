@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:31 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/11 22:50:43 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 15:33:52 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 #define CLAP_TRAP_HPP
 
 #include <iostream>
+
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define BLUE "\033[34m"
+#define YELLOW "\033[33m"
+#define RESET "\033[0m"
 
 class ClapTrap
 {
@@ -31,12 +37,14 @@ class ClapTrap
 		ClapTrap(const ClapTrap& other);
 		ClapTrap& operator=(const ClapTrap& other);
 		~ClapTrap();
-
+		
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
+		void printStats();
 };
 
 void log(std::string message);
+void logColored(std::string message, std::string color);
 
 #endif

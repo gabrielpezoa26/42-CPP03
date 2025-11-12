@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:34:51 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 14:52:48 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 15:12:38 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 {
-	log("DEBUG: assignment operator");
 	if (this != &other)
 	{
 		this->name = other.name;
@@ -46,7 +45,6 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::attack(const std::string& target)
 {
-	log("DEBUG: ScavTrap-> attack() called");
 	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on attack!");

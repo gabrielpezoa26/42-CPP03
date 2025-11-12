@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:29 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/11 23:15:53 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 15:31:40 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,25 @@ void log(std::string message)
 	std::cout << message << std::endl;
 }
 
+void logColored(std::string message, std::string color)
+{
+	std::cout << color << message << RESET << std::endl;
+}
+
 bool ClapTrap::isClapTrapDead()
 {
 	if (health_points <= 0)
 		return true;
 	return false;
+}
+
+void ClapTrap::printStats()
+{
+	log("\nprinting it's stats...");
+	std::cout << "name = " << name << std::endl;
+	std::cout << "health_points = " << health_points << std::endl;
+	std::cout << "energy_points = " << energy_points << std::endl;
+	std::cout << "attack_damage = " << attack_damage << std::endl;
 }
 
 ClapTrap::ClapTrap()
@@ -49,7 +63,6 @@ ClapTrap::ClapTrap(const ClapTrap& other)
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 {
-	log("DEBUG: assignment operator");
 	if (this != &other)
 	{
 		this->name = other.name;
@@ -68,7 +81,6 @@ ClapTrap::~ClapTrap()
 
 void ClapTrap::attack(const std::string& target)
 {
-	log("DEBUG: attack() called");
 	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on attack!");
@@ -85,14 +97,12 @@ void ClapTrap::takeDamage(unsigned int amount)
 		log("error on takeDamage!");
 		return ;
 	}
-	log("DEBUG: takeDamage() called");
 	std::cout << name << " has been damaged by " << amount << " points :((" << std::endl;
 	health_points -= amount;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	log("DEBUG: beRepaired() called");
 	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on beRepaired!");
@@ -101,5 +111,4 @@ void ClapTrap::beRepaired(unsigned int amount)
 	health_points += amount;
 	energy_points--;
 	std::cout << name << " has repaired " << amount << " points of health :))" << std::endl;
-	// std::cout << "DEBUG: health = " << health_points << std::endl;  //for eval-testing
 }

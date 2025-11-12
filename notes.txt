@@ -1,8 +1,4 @@
-10/11/25
-
-ex01:
-	-> add +testes na main
-
+12/11/25
 
 
 links:

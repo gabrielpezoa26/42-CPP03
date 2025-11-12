@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:29 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/10 09:14:37 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 15:12:20 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ ClapTrap::ClapTrap(const ClapTrap& other)
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 {
-	log("DEBUG: assignment operator");
 	if (this != &other)
 	{
 		this->name = other.name;
@@ -68,7 +67,6 @@ ClapTrap::~ClapTrap()
 
 void ClapTrap::attack(const std::string& target)
 {
-	log("DEBUG: attack() called");
 	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on attack!");
@@ -85,14 +83,12 @@ void ClapTrap::takeDamage(unsigned int amount)
 		log("error on takeDamage!");
 		return ;
 	}
-	log("DEBUG: takeDamage() called");
 	std::cout << name << " has been damaged by " << amount << " points :((" << std::endl;
 	health_points -= amount;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	log("DEBUG: beRepaired() called");
 	if (isClapTrapDead() || energy_points <= 0 || amount > energy_points)
 	{
 		log("error on beRepaired!");

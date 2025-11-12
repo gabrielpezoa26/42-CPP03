@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 14:48:35 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 15:33:35 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,32 @@
 
 int main()
 {
-	log("Displaying constructors output:");
+	logColored("-------Displaying constructors output-------", GREEN);
 	ClapTrap a("Eddie");
 	ScavTrap b("Murphy");
-	log("\n\n\n");
+	log("\n");
 
 
-	log("Testing ClapTrap again:");
+	logColored("-------Testing ClapTrap methods again-------", YELLOW);
 	a.attack("Zombie");
 	a.takeDamage(5);
 	a.beRepaired(4);
-	log("\n\n\n");
+	a.printStats();
+	log("\n");
 
 
-	log("Now testing ScavTrap own methods:");
+	logColored("-------Now testing ScavTrap own methods-------", BLUE);
 	b.attack("Skull");
 	b.guardGate();
-	log("\n\n\n");
+	log("\n");
 
 
-	log("Now testing ScavTrap inherited methods:");
+	logColored("-------Now testing ScavTrap inherited methods-------", BLUE);
 	b.takeDamage(3);
 	b.beRepaired(2);
-	log("\n\n\n");
+	b.printStats();
+	log("\n");
 
-	log("Displaying destructors output:");
+	logColored("-------Displaying destructors output-------", RED);
 	return 0;
 }
