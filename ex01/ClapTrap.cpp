@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:29 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/10 09:14:37 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/11 22:53:36 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ bool ClapTrap::isClapTrapDead()
 
 ClapTrap::ClapTrap()
 {
-	log("Default constructor called");
+	log("ClapTrap-> Default constructor called");
 	health_points = 10;
 	energy_points = 10;
 	attack_damage = 0;
@@ -34,7 +34,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string given_name)
 {
-	log("Parameterized constructor called");
+	log("ClapTrap-> Parameterized constructor called");
 	name = given_name;
 	health_points = 10;
 	energy_points = 10;
@@ -43,7 +43,7 @@ ClapTrap::ClapTrap(std::string given_name)
 
 ClapTrap::ClapTrap(const ClapTrap& other)
 {
-	log("Copy constructor called");
+	log("ClapTrap-> Copy constructor called");
 	*this = other;
 }
 
@@ -62,7 +62,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 
 ClapTrap::~ClapTrap()
 {
-	log("Default destructor called");
+	log("ClapTrap-> Default destructor called");
 	
 }
 
@@ -93,7 +93,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 void ClapTrap::beRepaired(unsigned int amount)
 {
 	log("DEBUG: beRepaired() called");
-	if (isClapTrapDead() || energy_points <= 0 || amount > energy_points)
+	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on beRepaired!");
 		return ;
@@ -101,4 +101,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 	health_points += amount;
 	energy_points--;
 	std::cout << name << " has repaired " << amount << " points of health :))" << std::endl;
+	std::cout << "DEBUG: health = " << health_points << std::endl;  //for eval-testing
 }

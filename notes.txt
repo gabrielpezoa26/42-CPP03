@@ -1,11 +1,17 @@
 10/11/25
 
+ex01:
+	->detalhar msgs de log
 
-->ex00:
-	-> organizar arquivos
+
+
 
 links:
 
 	https://www.geeksforgeeks.org/cpp/inheritance-in-c/
+
+	https://www.youtube.com/watch?v=5HYIFFuGcvk
+
+	https://www.geeksforgeeks.org/cpp/public-vs-protected-in-c-with-examples/
 
 	https://cplusplus.com/doc/tutorial/inheritance/
