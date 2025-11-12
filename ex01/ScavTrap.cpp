@@ -6,26 +6,36 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:34:51 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/11 22:44:16 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 14:52:48 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-bool ScavTrap::isScavTrapDead()
-{
-	if (health_points <= 0)
-		return true;
-	return false;
-}
-
 ScavTrap::ScavTrap(std::string given_name) : ClapTrap(given_name)
 {
 	log("ScavTrap-> Parameterized constructor called");
-	name = given_name;
 	health_points = 100;
 	energy_points = 50;
 	attack_damage = 20;
+}
+
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
+{
+	log("ScavTrap-> Copy constructor called");
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& other)
+{
+	log("DEBUG: assignment operator");
+	if (this != &other)
+	{
+		this->name = other.name;
+		this->energy_points = other.energy_points;
+		this->health_points = other.health_points;
+		this->attack_damage = other.attack_damage;
+	}
+	return (*this);
 }
 
 ScavTrap::~ScavTrap()
@@ -37,7 +47,7 @@ ScavTrap::~ScavTrap()
 void ScavTrap::attack(const std::string& target)
 {
 	log("DEBUG: ScavTrap-> attack() called");
-	if (isScavTrapDead() || energy_points <= 0)
+	if (isClapTrapDead() || energy_points <= 0)
 	{
 		log("error on attack!");
 		return ;

@@ -1,8 +1,7 @@
 10/11/25
 
 ex01:
-	->detalhar msgs de log
-
+	-> add +testes na main
 
 
 
