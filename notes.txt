@@ -1,24 +1,4 @@
-12/11/25
+13/11/25
 
--> organizar output ex00
-
--> revisar ex02
-
-estudar:
-	-> diamond problem
-
-
-
-
-
-links:
-
-	https://www.geeksforgeeks.org/cpp/diamond-problem-in-cpp/
-
-	https://www.geeksforgeeks.org/cpp/inheritance-in-c/
-
-	https://www.youtube.com/watch?v=5HYIFFuGcvk
-
-	https://www.geeksforgeeks.org/cpp/public-vs-protected-in-c-with-examples/
-
-	https://cplusplus.com/doc/tutorial/inheritance/
+ex03:
+	-> adicionar testes na main

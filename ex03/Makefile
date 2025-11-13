@@ -1,7 +1,7 @@
 NAME = DiamondTrap
 OBJECTS = objects/main.o objects/ClapTrap.o objects/ScavTrap.o objects/FragTrap.o objects/DiamondTrap.o
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -Wshadow -std=c++98
 OBJ_DIR = objects
 
 all: $(NAME)
