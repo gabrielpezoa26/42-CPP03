@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 15:33:35 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 22:37:41 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main()
 	log("\n");
 
 
-	logColored("-------Now testing ScavTrap own methods-------", BLUE);
+	logColored("-------Now testing ScavTrap own method-------", BLUE);
 	b.attack("Skull");
 	b.guardGate();
 	log("\n");

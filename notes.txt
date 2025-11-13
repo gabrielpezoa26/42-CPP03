@@ -1,7 +1,19 @@
 12/11/25
 
+-> organizar output ex00
+
+-> revisar ex02
+
+estudar:
+	-> diamond problem
+
+
+
+
 
 links:
+
+	https://www.geeksforgeeks.org/cpp/diamond-problem-in-cpp/
 
 	https://www.geeksforgeeks.org/cpp/inheritance-in-c/
 

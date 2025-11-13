@@ -6,41 +6,13 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 22:42:42 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 22:14:35 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
-#include "ScavTrap.hpp"
 
 int main()
 {
-	logColored("-------Displaying constructors output-------", GREEN);
-	ClapTrap a("Eddie");
-	FragTrap b("Murphy");
-	log("\n");
-
-
-	logColored("-------Testing ClapTrap methods again-------", YELLOW);
-	a.attack("Zombie");
-	a.takeDamage(5);
-	a.beRepaired(4);
-	a.printStats();
-	log("\n");
-
-
-	logColored("-------Now testing FragtTrap own method-------", BLUE);
-	b.attack("Zombie");
-	b.highFivesGuys();
-	log("\n");
-
-
-	logColored("-------Now testing FragTrap inherited methods-------", BLUE);
-	b.takeDamage(3);
-	b.beRepaired(2);
-	b.printStats();
-	log("\n");
-
-	logColored("-------Displaying destructors output-------", RED);
-	return 0;
+	log("Compiled!");
 }

@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:29 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 15:12:20 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/12 23:27:11 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 void log(std::string message)
 {
 	std::cout << message << std::endl;
+}
+
+void logColored(std::string message, std::string color)
+{
+	std::cout << color << message << RESET << std::endl;
 }
 
 bool ClapTrap::isClapTrapDead()
@@ -69,18 +74,18 @@ void ClapTrap::attack(const std::string& target)
 {
 	if (isClapTrapDead() || energy_points <= 0)
 	{
-		log("error on attack!");
+		log("Error on attack: Invalid value.");
 		return ;
 	}
 	energy_points -= 1;
-	std::cout << name << " attacks " << target << ", causing " << attack_damage << " points of damage!" << std::endl;
+	std::cout << "Claptrap " << name << " attacks " << target << ", causing " << attack_damage << " points of damage!" << std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
 	if (isClapTrapDead() || amount == 0)
 	{
-		log("error on takeDamage!");
+		log("Error on takeDamage: Invalid value.");
 		return ;
 	}
 	std::cout << name << " has been damaged by " << amount << " points :((" << std::endl;
@@ -91,7 +96,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 {
 	if (isClapTrapDead() || energy_points <= 0 || amount > energy_points)
 	{
-		log("error on beRepaired!");
+		log("Error on beRepaired: Invalid value.");
 		return ;
 	}
 	health_points += amount;
