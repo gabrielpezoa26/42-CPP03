@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:17:52 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 19:23:40 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/13 19:25:55 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,5 @@ FragTrap::~FragTrap()
 
 void FragTrap::highFivesGuys()
 {
-	log("DEBUG: dsadnsajdbsadjlsa");
+	std::cout << "FragTrap " << name << "says: High fiveeeeeeee" << std::endl;
 }

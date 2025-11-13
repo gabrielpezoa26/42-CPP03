@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:34:51 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 15:12:38 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/13 17:05:51 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap(std::string given_name) : ClapTrap(given_name)
 {
-	log("ScavTrap-> Parameterized constructor called");
+	log("Parameterized constructor called");
 	health_points = 100;
 	energy_points = 50;
 	attack_damage = 20;
@@ -40,7 +40,6 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 ScavTrap::~ScavTrap()
 {
 	log("ScavTrap-> Default destructor called");
-	
 }
 
 void ScavTrap::attack(const std::string& target)

@@ -6,11 +6,11 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 22:14:35 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:47:11 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main()
 {
