@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 22:11:55 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/13 19:36:12 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/14 11:18:07 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ DiamondTrap::DiamondTrap(std::string given_name)
 {
 	log("DiamondTrap-> Parameterized constructor called");
 
-	this->health_points = 100;
-	this->energy_points = 50;
-	this->attack_damage = 30;
+	health_points = 100;
+	energy_points = 50;
+	attack_damage = 30;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& other)

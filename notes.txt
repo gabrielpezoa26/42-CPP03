@@ -1,4 +1,4 @@
 13/11/25
 
 ex03:
-	-> adicionar testes na main
+	-> trocar valores de teste p facilitar eval
