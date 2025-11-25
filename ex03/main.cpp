@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/13 22:04:56 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:10:22 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int main()
 
 	logColored("-------Testing ClapTrap methods again-------", YELLOW);
 	a.attack("Zombie");
-	a.takeDamage(5);
-	a.beRepaired(4);
+	a.takeDamage(1);
+	a.beRepaired(2);
 	a.printStats();
 	log("\n");
 
@@ -35,7 +35,7 @@ int main()
 
 
 	logColored("-------Now testing DiamondTrap inherited methods-------", BLUE);
-	b.takeDamage(3);
+	b.takeDamage(1);
 	b.beRepaired(2);
 	b.printStats();
 	log("\n");

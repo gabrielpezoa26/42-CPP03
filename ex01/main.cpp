@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 22:37:41 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:04:55 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main()
 	logColored("-------Testing ClapTrap methods again-------", YELLOW);
 	a.attack("Zombie");
 	a.takeDamage(5);
-	a.beRepaired(4);
+	a.beRepaired(6);
 	a.printStats();
 	log("\n");
 
@@ -35,8 +35,8 @@ int main()
 
 
 	logColored("-------Now testing ScavTrap inherited methods-------", BLUE);
-	b.takeDamage(3);
-	b.beRepaired(2);
+	b.takeDamage(5);
+	b.beRepaired(6);
 	b.printStats();
 	log("\n");
 

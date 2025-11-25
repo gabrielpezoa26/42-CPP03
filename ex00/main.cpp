@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 17:23:39 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/12 23:28:49 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:04:35 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 
 	logColored("-------Testing valid values on ClapTrap 'a'-------", GREEN);
 	a.attack("zombie");
-	a.takeDamage(3);
+	a.takeDamage(1);
 	a.beRepaired(2);
 	log("\n\n");
 
@@ -30,7 +30,7 @@ int main()
 	logColored("-------Testing invalid values on ClapTrap 'b'-------", RED);
 	b.attack("zombie");
 	b.takeDamage(0);
-	b.beRepaired(11);
+	b.beRepaired(-2);
 	log("\n\n");
 
 

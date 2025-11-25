@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 22:11:55 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/14 11:18:07 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:17:23 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,6 @@ void DiamondTrap::attack(const std::string& target)
 
 void DiamondTrap::whoAmI()
 {
-	log("DiamondTrap-> whoAmI() called:");
-	
 	std::cout << "My name is: " << this->name << std::endl;
 	std::cout << "My ClapTrap name is: " << ClapTrap::name << std::endl;
 }
