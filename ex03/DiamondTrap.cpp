@@ -6,11 +6,13 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 22:11:55 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/25 16:17:23 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:25:45 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
+
+DiamondTrap::DiamondTrap() { }
 
 DiamondTrap::DiamondTrap(std::string given_name)
 : ClapTrap(given_name + "_clap_name"), ScavTrap(given_name), FragTrap(given_name), name(given_name)

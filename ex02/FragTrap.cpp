@@ -6,11 +6,13 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:17:52 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/25 16:07:54 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:25:14 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
+
+FragTrap::FragTrap() { }
 
 FragTrap::FragTrap(std::string given_name) : ClapTrap(given_name)
 {

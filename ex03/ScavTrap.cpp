@@ -6,11 +6,13 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:34:51 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/25 16:18:35 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:21:11 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap() { }
 
 ScavTrap::ScavTrap(std::string given_name) : ClapTrap(given_name)
 {
